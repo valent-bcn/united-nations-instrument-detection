@@ -1,61 +1,10 @@
-############ concrete files
-# document embeddings FAISS and numpy storage
-document_embeddings/faiss_docs_resolutions.bin
-document_embeddings/faiss_docs_resolutions.npy
-document_embeddings/subject_analysis/*.png
-document_embeddings/subject_analysis/*.csv
-document_embeddings/subject_analysis/score_distributions/*
-
-# treaties
-treaties/*.csv
-treaties/*.txt
-treaties/*.pdf
-treaties/*.md
-treaties/treaty-ner/*
-
-# instruments (NER)
-instrument-ner/checkpoints/*
-instrument-ner/data/*
-instrument-ner/*.csv
-
-# instruments (EL)
-instrument-el/*.csv
-
-# unesco instruments
-unesco_instruments/*.csv
-unesco_instruments/*.zip
-unesco_instruments/txt/*.txt
-unesco_instruments/pdf_files/*.pdf
-
-#  ohchr instruments
-ohchr_instruments/*.csv
-ohchr_instruments/*.txt
-ohchr_instruments/*.pdf
-ohchr_instruments/prior_parts/*.csv
-ohchr_instruments/resolution_texts/hrc_pdfs/*.pdf
-
-# resolutions
-resolutions/*.csv
-resolutions/*.txt
-resolutions/*.pdf
-resolutions/*.md
-
-# conventions, protocols, recommendations
-conv-prot-rec/*.csv
-conv-prot-rec/*.txt
-conv-prot-rec/*.pdf
-conv-prot-rec/*.md
-
 # resolutions from SpiritRAG project
-spiritRAG_corpora/data/*
-spiritRAG_corpora/*.csv
+spiritrag-corpus/data/*
 
-# miscelania
-miscelania/*.png
-
-# Qwen data
-Qwen3/data/
-Qwen3/checkpoints_silver_legacy/
+# resolutions. Too large because they contain the contents
+resolutions/ga_resolutions_1946_2019.csv
+resolutions/ga_citations_1946_2019.csv
+resolutions/ga_resolutions_1946_2025.csv
 
 # OS files
 .DS_Store

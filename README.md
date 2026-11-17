@@ -1,44 +1,20 @@
-# United Nations Citation Explorer
+# Instruments & Resolutions Toolkit
 
-A pipeline for collecting, organizing, and cross-referencing legal texts from the United Nations and related international bodies — resolutions, treaties, conventions, protocols, and other instruments — and exploring how they cite one another.
+This repository collects the data extraction and modeling work on international legal instruments and United Nations resolutions. 
+This corresponds to the Masther's Thesis: Detecting References to International Instruments in UN Resolutions: A Transformer-Based Approach
 
-## Project Structure
 
-```
-United_Nations_citation_explorer/
-├── resolutions/ 
-├── treaties/
-├── instruments/
-├── unesco_instruments/ 
-├── conv-prot-rec/
-├── document_embeddings/
-├── Qwen3/
-├── requirements.txt
-└── LICENSE.txt
-```
+## Repository structure
 
-## Modules
-
-### [`resolutions/`](./resolutions)
-UN General Assembly resolutions from 1946 to 2019, along with their citations. Collected by Mesquita and Pires.
-
-### [`treaties/`](./treaties)
-Treaties collected from Wikipedia, as well as treaties collected from the UN Treaty Collection
-### [`instruments/`](./instruments)
-Instruments gathered by the [Office of the UN High Commissioner for Human Rights (OHCHR)](https://www.ohchr.org/en/). 
-Many overlap with `resolutions/`, but this folder also covers other legal instruments beyond resolutions.
-
-### [`unesco_instruments/`](./unesco_instruments)
-Legal instruments issued by the United Nations Educational, Scientific and Cultural Organization (UNESCO) 
-
-### [`conv-prot-rec/`](./conv-prot-rec)
-International Labour Organization (ILO) conventions, protocols, and recommendations.
-
-### [`document_embeddings/`](./document_embeddings)
-Embeds documents and builds a FAISS index so they can be quickly matched against a natural-language topic description (e.g. "human rights", "gender equality") and retrieved.
-
-### [`Qwen3/`](./Qwen3)
-A minimal training script for a Qwen3 model. Kept intentionally simple — the actual model training runs on a server and a private repository; this folder just holds the essential script.
-
-## License
-This project is licensed under the terms in [`LICENSE.txt`](./LICENSE.txt) (MIT).
+| Directory | Description |
+|---|---|
+| [`document-embeddings/`](./document-embeddings) | Computes embeddings of the resolutions, runs the subject analysis, and retrieves the top-k most similar resolutions for a given topic. |
+| [`ilo/`](./ilo) | Instruments from the International Labour Organization (ILO). |
+| [`instrument-el/`](./instrument-el) | Prototype of the entity linking engine for instruments. |
+| [`instrument-ner/`](./instrument-ner) | Training and evaluation of the named entity recognition (NER) model for instruments. |
+| [`ohchr-instruments/`](./ohchr-instruments) | Instruments of the Office of the United Nations High Commissioner for Human Rights (OHCHR). 
+| [`qwen3-fine-tune/`](./qwen3-fine-tune) | Prototype of the LLM-based resolution code finder, built by fine-tuning Qwen3. |
+| [`spiritrag-corpus/`](./spiritrag-corpus) | Data extractor for the SpiritRAG PDFs. |
+| [`unesco_instruments/`](./unesco_instruments) | Instruments of the United Nations Educational, Scientific and Cultural Organization (UNESCO). |
+| [`untc-treaties/`](./untc-treaties) | Multilateral treaties from the United Nations Treaty Collection (UNTC). |
+| [`wikidata/`](./wikidata) | Instruments from Wikidata, mostly treaties. |

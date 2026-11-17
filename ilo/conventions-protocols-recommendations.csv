@@ -1,0 +1,408 @@
+code,title,year,number
+C001,"Hours of Work (Industry) Convention, 1919 (No. 1)",1919,1
+C002,"Unemployment Convention, 1919 (No. 2)",1919,2
+C003,"Maternity Protection Convention, 1919 (No. 3)",1919,3
+C004,"Night Work (Women) Convention, 1919 (No. 4)",1919,4
+C005,"Minimum Age (Industry) Convention, 1919 (No. 5)",1919,5
+C006,"Night Work of Young Persons (Industry) Convention, 1919 (No. 6)",1919,6
+C007,"Minimum Age (Sea) Convention, 1920 (No. 7)",1920,7
+C008,"Unemployment Indemnity (Shipwreck) Convention, 1920 (No. 8)",1920,8
+C009,"Placing of Seamen Convention, 1920 (No. 9)",1920,9
+C010,"Minimum Age (Agriculture) Convention, 1921 (No. 10)",1921,10
+C011,"Right of Association (Agriculture) Convention, 1921 (No. 11)",1921,11
+C012,"Workmen's Compensation (Agriculture) Convention, 1921 (No. 12)",1921,12
+C013,"White Lead (Painting) Convention, 1921 (No. 13)",1921,13
+C014,"Weekly Rest (Industry) Convention, 1921 (No. 14)",1921,14
+C015,"Minimum Age (Trimmers and Stokers) Convention, 1921 (No. 15)",1921,15
+C016,"Medical Examination of Young Persons (Sea) Convention, 1921 (No. 16)",1921,16
+C017,"Workmen's Compensation (Accidents) Convention, 1925 (No. 17)",1925,17
+C018,"Workmen's Compensation (Occupational Diseases) Convention, 1925 (No. 18)",1925,18
+C019,"Equality of Treatment (Accident Compensation) Convention, 1925 (No. 19)",1925,19
+C020,"Night Work (Bakeries) Convention, 1925 (No. 20)",1925,20
+C021,"Inspection of Emigrants Convention, 1926 (No. 21)",1926,21
+C022,"Seamen's Articles of Agreement Convention, 1926 (No. 22)",1926,22
+C023,"Repatriation of Seamen Convention, 1926 (No. 23)",1926,23
+C024,"Sickness Insurance (Industry) Convention, 1927 (No. 24)",1927,24
+C025,"Sickness Insurance (Agriculture) Convention, 1927 (No. 25)",1927,25
+C026,"Minimum Wage-Fixing Machinery Convention, 1928 (No. 26)",1928,26
+C027,"Marking of Weight (Packages Transported by Vessels) Convention, 1929 (No. 27)",1929,27
+C028,"Protection against Accidents (Dockers) Convention, 1929 (No. 28)",1929,28
+C029,"Forced Labour Convention, 1930 (No. 29)",1930,29
+P029,"Protocol of 2014 to the Forced Labour Convention, 1930",1930,
+C030,"Hours of Work (Commerce and Offices) Convention, 1930 (No. 30)",1930,30
+C031,"Hours of Work (Coal Mines) Convention, 1931 (No. 31)",1931,31
+C032,"Protection against Accidents (Dockers) Convention (Revised), 1932 (No. 32)",1932,32
+C033,"Minimum Age (Non-Industrial Employment) Convention, 1932 (No. 33)",1932,33
+C034,"Fee-Charging Employment Agencies Convention, 1933 (No. 34)",1933,34
+C035,"Old-Age Insurance (Industry, etc.) Convention, 1933 (No. 35)",1933,35
+C036,"Old-Age Insurance (Agriculture) Convention, 1933 (No. 36)",1933,36
+C037,"Invalidity Insurance (Industry, etc.) Convention, 1933 (No. 37)",1933,37
+C038,"Invalidity Insurance (Agriculture) Convention, 1933 (No. 38)",1933,38
+C039,"Survivors' Insurance (Industry, etc.) Convention, 1933 (No. 39)",1933,39
+C040,"Survivors' Insurance (Agriculture) Convention, 1933 (No. 40)",1933,40
+C041,"Night Work (Women) Convention (Revised), 1934 (No. 41)",1934,41
+C042,"Workmen's Compensation (Occupational Diseases) Convention (Revised), 1934 (No. 42)",1934,42
+C043,"Sheet-Glass Works Convention, 1934 (No. 43)",1934,43
+C044,"Unemployment Provision Convention, 1934 (No. 44)",1934,44
+C045,"Underground Work (Women) Convention, 1935 (No. 45)",1935,45
+C046,"Hours of Work (Coal Mines) Convention (Revised), 1935 (No. 46)",1935,46
+C047,"Forty-Hour Week Convention, 1935 (No. 47)",1935,47
+C048,"Maintenance of Migrants' Pension Rights Convention, 1935 (No. 48)",1935,48
+C049,"Reduction of Hours of Work (Glass-Bottle Works) Convention, 1935 (No. 49)",1935,49
+C050,"Recruiting of Indigenous Workers Convention, 1936 (No. 50)",1936,50
+C051,"Reduction of Hours of Work (Public Works) Convention, 1936 (No. 51)",1936,51
+C052,"Holidays with Pay Convention, 1936 (No. 52)",1936,52
+C053,"Officers' Competency Certificates Convention, 1936 (No. 53)",1936,53
+C054,"Holidays with Pay (Sea) Convention, 1936 (No. 54)",1936,54
+C055,"Shipowners' Liability (Sick and Injured Seamen) Convention, 1936 (No. 55)",1936,55
+C056,"Sickness Insurance (Sea) Convention, 1936 (No. 56)",1936,56
+C057,"Hours of Work and Manning (Sea) Convention, 1936 (No. 57)",1936,57
+C058,"Minimum Age (Sea) Convention (Revised), 1936 (No. 58)",1936,58
+C059,"Minimum Age (Industry) Convention (Revised), 1937 (No. 59)",1937,59
+C060,"Minimum Age (Non-Industrial Employment) Convention (Revised), 1937 (No. 60)",1937,60
+C061,"Reduction of Hours of Work (Textiles) Convention, 1937 (No. 61)",1937,61
+C062,"Safety Provisions (Building) Convention, 1937 (No. 62)",1937,62
+C063,"Convention concerning Statistics of Wages and Hours of Work, 1938 (No. 63)",1938,63
+C064,"Contracts of Employment (Indigenous Workers) Convention, 1939 (No. 64)",1939,64
+C065,"Penal Sanctions (Indigenous Workers) Convention, 1939 (No. 65)",1939,65
+C066,"Migration for Employment Convention, 1939 (No. 66)",1939,66
+C067,"Hours of Work and Rest Periods (Road Transport) Convention, 1939 (No. 67)",1939,67
+C068,"Food and Catering (Ships' Crews) Convention, 1946 (No. 68)",1946,68
+C069,"Certification of Ships' Cooks Convention, 1946 (No. 69)",1946,69
+C070,"Social Security (Seafarers) Convention, 1946 (No. 70)",1946,70
+C071,"Seafarers' Pensions Convention, 1946 (No. 71)",1946,71
+C072,"Paid Vacations (Seafarers) Convention, 1946 (No. 72)",1946,72
+C073,"Medical Examination (Seafarers) Convention, 1946 (No. 73)",1946,73
+C074,"Certification of Able Seamen Convention, 1946 (No. 74)",1946,74
+C075,"Accommodation of Crews Convention, 1946 (No. 75)",1946,75
+C076,"Wages, Hours of Work and Manning (Sea) Convention, 1946 (No. 76)",1946,76
+C077,"Medical Examination of Young Persons (Industry) Convention, 1946 (No. 77)",1946,77
+C078,"Medical Examination of Young Persons (Non-Industrial Occupations) Convention, 1946 (No. 78)",1946,78
+C079,"Night Work of Young Persons (Non-Industrial Occupations) Convention, 1946 (No. 79)",1946,79
+C080,"Final Articles Revision Convention, 1946 (No. 80)",1946,80
+C081,"Labour Inspection Convention, 1947 (No. 81)",1947,81
+P081,"Protocol of 1995 to the Labour Inspection Convention, 1947",1947,
+C082,"Social Policy (Non-Metropolitan Territories) Convention, 1947 (No. 82)",1947,82
+C083,"Labour Standards (Non-Metropolitan Territories) Convention, 1947 (No. 83)",1947,83
+C084,"Right of Association (Non-Metropolitan Territories) Convention, 1947 (No. 84)",1947,84
+C085,"Labour Inspectorates (Non-Metropolitan Territories) Convention, 1947 (No. 85)",1947,85
+C086,"Contracts of Employment (Indigenous Workers) Convention, 1947 (No. 86)",1947,86
+C087,"Freedom of Association and Protection of the Right to Organise Convention, 1948 (No. 87)",1948,87
+C088,"Employment Service Convention, 1948 (No. 88)",1948,88
+C089,"Night Work (Women) Convention (Revised), 1948 (No. 89)",1948,89
+P089,"Protocol of 1990 to the Night Work (Women) Convention (Revised), 1948",1948,
+C090,"Night Work of Young Persons (Industry) Convention (Revised), 1948 (No. 90)",1948,90
+C091,"Paid Vacations (Seafarers) Convention (Revised), 1949 (No. 91)",1949,91
+C092,"Accommodation of Crews Convention (Revised), 1949 (No. 92)",1949,92
+C093,"Wages, Hours of Work and Manning (Sea) Convention (Revised), 1949 (No. 93)",1949,93
+C094,"Labour Clauses (Public Contracts) Convention, 1949 (No. 94)",1949,94
+C095,"Protection of Wages Convention, 1949 (No. 95)",1949,95
+C096,"Fee-Charging Employment Agencies Convention (Revised), 1949 (No. 96)",1949,96
+C097,"Migration for Employment Convention (Revised), 1949 (No. 97)",1949,97
+C098,"Right to Organise and Collective Bargaining Convention, 1949 (No. 98)",1949,98
+C099,"Minimum Wage Fixing Machinery (Agriculture) Convention, 1951 (No. 99)",1951,99
+C100,"Equal Remuneration Convention, 1951 (No. 100)",1951,100
+C101,"Holidays with Pay (Agriculture) Convention, 1952 (No. 101)",1952,101
+C102,"Social Security (Minimum Standards) Convention, 1952 (No. 102)",1952,102
+C103,"Maternity Protection Convention (Revised), 1952 (No. 103)",1952,103
+C104,"Abolition of Penal Sanctions (Indigenous Workers) Convention, 1955 (No. 104)",1955,104
+C105,"Abolition of Forced Labour Convention, 1957 (No. 105)",1957,105
+C106,"Weekly Rest (Commerce and Offices) Convention, 1957 (No. 106)",1957,106
+C107,"Indigenous and Tribal Populations Convention, 1957 (No. 107)",1957,107
+C108,"Seafarers' Identity Documents Convention, 1958 (No. 108)",1958,108
+C109,"Wages, Hours of Work and Manning (Sea) Convention (Revised), 1958 (No. 109)",1958,109
+C110,"Plantations Convention, 1958 (No. 110)",1958,110
+P110,"Protocol of 1982 to the Plantations Convention, 1958",1958,
+C111,"Discrimination (Employment and Occupation) Convention, 1958 (No. 111)",1958,111
+C112,"Minimum Age (Fishermen) Convention, 1959 (No. 112)",1959,112
+C113,"Medical Examination (Fishermen) Convention, 1959 (No. 113)",1959,113
+C114,"Fishermen's Articles of Agreement Convention, 1959 (No. 114)",1959,114
+C115,"Radiation Protection Convention, 1960 (No. 115)",1960,115
+C116,"Final Articles Revision Convention, 1961 (No. 116)",1961,116
+C117,"Social Policy (Basic Aims and Standards) Convention, 1962 (No. 117)",1962,117
+C118,"Equality of Treatment (Social Security) Convention, 1962 (No. 118)",1962,118
+C119,"Guarding of Machinery Convention, 1963 (No. 119)",1963,119
+C120,"Hygiene (Commerce and Offices) Convention, 1964 (No. 120)",1964,120
+C121,"Employment Injury Benefits Convention, 1964 [Schedule I amended in 1980] (No. 121)",1964,121
+C122,"Employment Policy Convention, 1964 (No. 122)",1964,122
+C123,"Minimum Age (Underground Work) Convention, 1965 (No. 123)",1965,123
+C124,"Medical Examination of Young Persons (Underground Work) Convention, 1965 (No. 124)",1965,124
+C125,"Fishermen's Competency Certificates Convention, 1966 (No. 125)",1966,125
+C126,"Accommodation of Crews (Fishermen) Convention, 1966 (No. 126)",1966,126
+C127,"Maximum Weight Convention, 1967 (No. 127)",1967,127
+C128,"Invalidity, Old-Age and Survivors' Benefits Convention, 1967 (No. 128)",1967,128
+C129,"Labour Inspection (Agriculture) Convention, 1969 (No. 129)",1969,129
+C130,"Medical Care and Sickness Benefits Convention, 1969 (No. 130)",1969,130
+C131,"Minimum Wage Fixing Convention, 1970 (No. 131)",1970,131
+C132,"Holidays with Pay Convention (Revised), 1970 (No. 132)",1970,132
+C133,"Accommodation of Crews (Supplementary Provisions) Convention, 1970 (No. 133)",1970,133
+C134,"Prevention of Accidents (Seafarers) Convention, 1970 (No. 134)",1970,134
+C135,"Workers' Representatives Convention, 1971 (No. 135)",1971,135
+C136,"Benzene Convention, 1971 (No. 136)",1971,136
+C137,"Dock Work Convention, 1973 (No. 137)",1973,137
+C138,"Minimum Age Convention, 1973 (No. 138)",1973,138
+C139,"Occupational Cancer Convention, 1974 (No. 139)",1974,139
+C140,"Paid Educational Leave Convention, 1974 (No. 140)",1974,140
+C141,"Rural Workers' Organisations Convention, 1975 (No. 141)",1975,141
+C142,"Human Resources Development Convention, 1975 (No. 142)",1975,142
+C143,"Migrant Workers (Supplementary Provisions) Convention, 1975 (No. 143)",1975,143
+C144,"Tripartite Consultation (International Labour Standards) Convention, 1976 (No. 144)",1976,144
+C145,"Continuity of Employment (Seafarers) Convention, 1976 (No. 145)",1976,145
+C146,"Seafarers' Annual Leave with Pay Convention, 1976 (No. 146)",1976,146
+C147,"Merchant Shipping (Minimum Standards) Convention, 1976 (No. 147)",1976,147
+C148,"Working Environment (Air Pollution, Noise and Vibration) Convention, 1977 (No. 148)",1977,148
+C149,"Nursing Personnel Convention, 1977 (No. 149)",1977,149
+C150,"Labour Administration Convention, 1978 (No. 150)",1978,150
+C151,"Labour Relations (Public Service) Convention, 1978 (No. 151)",1978,151
+C152,"Occupational Safety and Health (Dock Work) Convention, 1979 (No. 152)",1979,152
+C153,"Hours of Work and Rest Periods (Road Transport) Convention, 1979 (No. 153)",1979,153
+C154,"Collective Bargaining Convention, 1981 (No. 154)",1981,154
+C155,"Occupational Safety and Health Convention, 1981 (No. 155)",1981,155
+P155,"Protocol of 2002 to the Occupational Safety and Health Convention, 1981",1981,
+C156,"Workers with Family Responsibilities Convention, 1981 (No. 156)",1981,156
+C157,"Maintenance of Social Security Rights Convention, 1982 (No. 157)",1982,157
+C158,"Termination of Employment Convention, 1982 (No. 158)",1982,158
+C159,"Vocational Rehabilitation and Employment (Disabled Persons) Convention, 1983 (No. 159)",1983,159
+C160,"Labour Statistics Convention, 1985 (No. 160)",1985,160
+C161,"Occupational Health Services Convention, 1985 (No. 161)",1985,161
+C162,"Asbestos Convention, 1986 (No. 162)",1986,162
+C163,"Seafarers' Welfare Convention, 1987 (No. 163)",1987,163
+C164,"Health Protection and Medical Care (Seafarers) Convention, 1987 (No. 164)",1987,164
+C165,"Social Security (Seafarers) Convention (Revised), 1987 (No. 165)",1987,165
+C166,"Repatriation of Seafarers Convention (Revised), 1987 (No. 166)",1987,166
+C167,"Safety and Health in Construction Convention, 1988 (No. 167)",1988,167
+C168,"Employment Promotion and Protection against Unemployment Convention, 1988 (No. 168)",1988,168
+C169,"Indigenous and Tribal Peoples Convention, 1989 (No. 169)",1989,169
+C170,"Chemicals Convention, 1990 (No. 170)",1990,170
+C171,"Night Work Convention, 1990 (No. 171)",1990,171
+C172,"Working Conditions (Hotels and Restaurants) Convention, 1991 (No. 172)",1991,172
+C173,"Protection of Workers' Claims (Employer's Insolvency) Convention, 1992 (No. 173)",1992,173
+C174,"Prevention of Major Industrial Accidents Convention, 1993 (No. 174)",1993,174
+C175,"Part-Time Work Convention, 1994 (No. 175)",1994,175
+C176,"Safety and Health in Mines Convention, 1995 (No. 176)",1995,176
+C177,"Home Work Convention, 1996 (No. 177)",1996,177
+C178,"Labour Inspection (Seafarers) Convention, 1996 (No. 178)",1996,178
+C179,"Recruitment and Placement of Seafarers Convention, 1996 (No. 179)",1996,179
+C180,"Seafarers' Hours of Work and the Manning of Ships Convention, 1996 (No. 180)",1996,180
+C181,"Private Employment Agencies Convention, 1997 (No. 181)",1997,181
+C182,"Worst Forms of Child Labour Convention, 1999 (No. 182)",1999,182
+C183,"Maternity Protection Convention, 2000 (No. 183)",2000,183
+C184,"Safety and Health in Agriculture Convention, 2001 (No. 184)",2001,184
+C185,"Seafarers' Identity Documents Convention (Revised), 2003, as amended (No. 185)",2003,185
+"MLC, 2006","Maritime Labour Convention, 2006 (MLC, 2006)",2006,
+C187,"Promotional Framework for Occupational Safety and Health Convention, 2006 (No. 187)",2006,187
+C188,"Work in Fishing Convention, 2007 (No. 188)",2007,188
+C189,"Domestic Workers Convention, 2011 (No. 189)",2011,189
+C190,"Violence and Harassment Convention, 2019 (No. 190)",2019,190
+C191,"Safe and Healthy Working Environment (Consequential Amendments) Convention, 2023 (No. 191)",2023,191
+C192,"Biological Hazards in the Working Environment Convention, 2025 (No. 192)",2025,192
+P147,"Protocol of 1996 to the Merchant Shipping (Minimum Standards) Convention, 1976",1976,
+R001,"Unemployment Recommendation, 1919 (No. 1)",1919,1
+R002,"Reciprocity of Treatment Recommendation, 1919 (No. 2)",1919,2
+R003,"Anthrax Prevention Recommendation, 1919 (No. 3)",1919,3
+R004,"Lead Poisoning (Women and Children) Recommendation, 1919 (No. 4)",1919,4
+R005,"Labour Inspection (Health Services) Recommendation, 1919 (No. 5)",1919,5
+R006,"White Phosphorus Recommendation, 1919 (No. 6)",1919,6
+R007,"Hours of Work (Fishing) Recommendation, 1920 (No. 7)",1920,7
+R008,"Hours of Work (Inland Navigation) Recommendation, 1920 (No. 8)",1920,8
+R009,"National Seamen's Codes Recommendation, 1920 (No. 9)",1920,9
+R010,"Unemployment Insurance (Seamen) Recommendation, 1920 (No. 10)",1920,10
+R011,"Unemployment (Agriculture) Recommendation, 1921 (No. 11)",1921,11
+R012,"Maternity Protection (Agriculture) Recommendation, 1921 (No. 12)",1921,12
+R013,"Night Work of Women (Agriculture) Recommendation, 1921 (No. 13)",1921,13
+R014,"Night Work of Children and Young Persons (Agriculture) Recommendation, 1921 (No. 14)",1921,14
+R015,"Vocational Education (Agriculture) Recommendation, 1921 (No. 15)",1921,15
+R016,"Living-in Conditions (Agriculture) Recommendation, 1921 (No. 16)",1921,16
+R017,"Social Insurance (Agriculture) Recommendation, 1921 (No. 17)",1921,17
+R018,"Weekly Rest (Commerce) Recommendation, 1921 (No. 18)",1921,18
+R019,"Migration Statistics Recommendation, 1922 (No. 19)",1922,19
+R020,"Labour Inspection Recommendation, 1923 (No. 20)",1923,20
+R021,"Utilisation of Spare Time Recommendation, 1924 (No. 21)",1924,21
+R022,"Workmen's Compensation (Minimum Scale) Recommendation, 1925 (No. 22)",1925,22
+R023,"Workmen's Compensation (Jurisdiction) Recommendation, 1925 (No. 23)",1925,23
+R024,"Workmen's Compensation (Occupational Diseases) Recommendation, 1925 (No. 24)",1925,24
+R025,"Equality of Treatment (Accident Compensation) Recommendation, 1925 (No. 25)",1925,25
+R026,"Migration (Protection of Females at Sea) Recommendation, 1926 (No. 26)",1926,26
+R027,"Repatriation (Ship Masters and Apprentices) Recommendation, 1926 (No. 27)",1926,27
+R028,"Labour Inspection (Seamen) Recommendation, 1926 (No. 28)",1926,28
+R029,"Sickness Insurance Recommendation, 1927 (No. 29)",1927,29
+R030,"Minimum Wage-Fixing Machinery Recommendation, 1928 (No. 30)",1928,30
+R031,"Prevention of Industrial Accidents Recommendation, 1929 (No. 31)",1929,31
+R032,"Power-driven Machinery Recommendation, 1929 (No. 32)",1929,32
+R033,"Protection against Accidents (Dockers) Reciprocity Recommendation, 1929 (No. 33)",1929,33
+R034,"Protection against Accidents (Dockers) Consultation of Organisations Recommendation, 1929 (No. 34)",1929,34
+R035,"Forced Labour (Indirect Compulsion) Recommendation, 1930 (No. 35)",1930,35
+R036,"Forced Labour (Regulation) Recommendation, 1930 (No. 36)",1930,36
+R037,"Hours of Work (Hotels, etc.) Recommendation, 1930 (No. 37)",1930,37
+R038,"Hours of Work (Theatres, etc.) Recommendation, 1930 (No. 38)",1930,38
+R039,"Hours of Work (Hospitals, etc.) Recommendation, 1930 (No. 39)",1930,39
+R040,"Protection against Accidents (Dockers) Reciprocity Recommendation, 1932 (No. 40)",1932,40
+R041,"Minimum Age (Non-Industrial Employment) Recommendation, 1932 (No. 41)",1932,41
+R042,"Employment Agencies Recommendation, 1933 (No. 42)",1933,42
+R043,"Invalidity, Old-Age and Survivors' Insurance Recommendation, 1933 (No. 43)",1933,43
+R044,"Unemployment Provision Recommendation, 1934 (No. 44)",1934,44
+R045,"Unemployment (Young Persons) Recommendation, 1935 (No. 45)",1935,45
+R046,"Elimination of Recruiting Recommendation, 1936 (No. 46)",1936,46
+R047,"Holidays with Pay Recommendation, 1936 (No. 47)",1936,47
+R048,"Seamen's Welfare in Ports Recommendation, 1936 (No. 48)",1936,48
+R049,"Hours of Work and Manning (Sea) Recommendation, 1936 (No. 49)",1936,49
+R050,"Public Works (International Co-operation) Recommendation, 1937 (No. 50)",1937,50
+R051,"Public Works (National Planning) Recommendation, 1937 (No. 51)",1937,51
+R052,"Minimum Age (Family Undertakings) Recommendation, 1937 (No. 52)",1937,52
+R053,"Safety Provisions (Building) Recommendation, 1937 (No. 53)",1937,53
+R054,"Inspection (Building) Recommendation, 1937 (No. 54)",1937,54
+R055,"Co-operation in Accident Prevention (Building) Recommendation, 1937 (No. 55)",1937,55
+R056,"Vocational Education (Building) Recommendation, 1937 (No. 56)",1937,56
+R057,"Vocational Training Recommendation, 1939 (No. 57)",1939,57
+R058,"Contracts of Employment (Indigenous Workers) Recommendation, 1939 (No. 58)",1939,58
+R059,"Labour Inspectorates (Indigenous Workers) Recommendation, 1939 (No. 59)",1939,59
+R060,"Apprenticeship Recommendation, 1939 (No. 60)",1939,60
+R061,"Migration for Employment Recommendation, 1939 (No. 61)",1939,61
+R062,"Migration for Employment (Co-operation between States) Recommendation, 1939 (No. 62)",1939,62
+R063,"Control Books (Road Transport) Recommendation, 1939 (No. 63)",1939,63
+R064,"Night Work (Road Transport) Recommendation, 1939 (No. 64)",1939,64
+R065,"Methods of Regulating Hours (Road Transport) Recommendation, 1939 (No. 65)",1939,65
+R066,"Rest Periods (Private Chauffeurs) Recommendation, 1939 (No. 66)",1939,66
+R067,"Income Security Recommendation, 1944 (No. 67)",1944,67
+R068,"Social Security (Armed Forces) Recommendation, 1944 (No. 68)",1944,68
+R069,"Medical Care Recommendation, 1944 (No. 69)",1944,69
+R070,"Social Policy in Dependent Territories Recommendation, 1944 (No. 70)",1944,70
+R071,"Employment (Transition from War to Peace) Recommendation, 1944 (No. 71)",1944,71
+R072,"Employment Service Recommendation, 1944 (No. 72)",1944,72
+R073,"Public Works (National Planning) Recommendation, 1944 (No. 73)",1944,73
+R074,"Social Policy in Dependent Territories (Supplementary Provisions) Recommendation, 1945 (No. 74)",1945,74
+R075,"Seafarers' Social Security (Agreements) Recommendation, 1946 (No. 75)",1946,75
+R076,"Seafarers (Medical Care for Dependants) Recommendation, 1946 (No. 76)",1946,76
+R077,"Vocational Training (Seafarers) Recommendation, 1946 (No. 77)",1946,77
+R078,"Bedding, Mess Utensils and Miscellaneous Provisions (Ships' Crews) Recommendation, 1946 (No. 78)",1946,78
+R079,"Medical Examination of Young Persons Recommendation, 1946 (No. 79)",1946,79
+R080,"Night Work of Young Persons (Non-Industrial Occupations) Recommendation, 1946 (No. 80)",1946,80
+R081,"Labour Inspection Recommendation, 1947 (No. 81)",1947,81
+R082,"Labour Inspection (Mining and Transport) Recommendation, 1947 (No. 82)",1947,82
+R083,"Employment Service Recommendation, 1948 (No. 83)",1948,83
+R084,"Labour Clauses (Public Contracts) Recommendation, 1949 (No. 84)",1949,84
+R085,"Protection of Wages Recommendation, 1949 (No. 85)",1949,85
+R086,"Migration for Employment Recommendation (Revised), 1949 (No. 86)",1949,86
+R087,"Vocational Guidance Recommendation, 1949 (No. 87)",1949,87
+R088,"Vocational Training (Adults) Recommendation, 1950 (No. 88)",1950,88
+R089,"Minimum Wage-Fixing Machinery (Agriculture) Recommendation, 1951 (No. 89)",1951,89
+R090,"Equal Remuneration Recommendation, 1951 (No. 90)",1951,90
+R091,"Collective Agreements Recommendation, 1951 (No. 91)",1951,91
+R092,"Voluntary Conciliation and Arbitration Recommendation, 1951 (No. 92)",1951,92
+R093,"Holidays with Pay (Agriculture) Recommendation, 1952 (No. 93)",1952,93
+R094,"Co-operation at the Level of the Undertaking Recommendation, 1952 (No. 94)",1952,94
+R095,"Maternity Protection Recommendation, 1952 (No. 95)",1952,95
+R096,"Minimum Age (Coal Mines) Recommendation, 1953 (No. 96)",1953,96
+R097,"Protection of Workers' Health Recommendation, 1953 (No. 97)",1953,97
+R098,"Holidays with Pay Recommendation, 1954 (No. 98)",1954,98
+R099,"Vocational Rehabilitation (Disabled) Recommendation, 1955 (No. 99)",1955,99
+R100,"Protection of Migrant Workers (Underdeveloped Countries) Recommendation, 1955 (No. 100)",1955,100
+R101,"Vocational Training (Agriculture) Recommendation, 1956 (No. 101)",1956,101
+R102,"Welfare Facilities Recommendation, 1956 (No. 102)",1956,102
+R103,"Weekly Rest (Commerce and Offices) Recommendation, 1957 (No. 103)",1957,103
+R104,"Indigenous and Tribal Populations Recommendation, 1957 (No. 104)",1957,104
+R105,"Ships' Medicine Chests Recommendation, 1958 (No. 105)",1958,105
+R106,"Medical Advice at Sea Recommendation, 1958 (No. 106)",1958,106
+R107,"Seafarers' Engagement (Foreign Vessels) Recommendation, 1958 (No. 107)",1958,107
+R108,"Social Conditions and Safety (Seafarers) Recommendation, 1958 (No. 108)",1958,108
+R109,"Wages, Hours of Work and Manning (Sea) Recommendation, 1958 (No. 109)",1958,109
+R110,"Plantations Recommendation, 1958 (No. 110)",1958,110
+R111,"Discrimination (Employment and Occupation) Recommendation, 1958 (No. 111)",1958,111
+R112,"Occupational Health Services Recommendation, 1959 (No. 112)",1959,112
+R113,"Consultation (Industrial and National Levels) Recommendation, 1960 (No. 113)",1960,113
+R114,"Radiation Protection Recommendation, 1960 (No. 114)",1960,114
+R115,"Workers' Housing Recommendation, 1961 (No. 115)",1961,115
+R116,"Reduction of Hours of Work Recommendation, 1962 (No. 116)",1962,116
+R117,"Vocational Training Recommendation, 1962 (No. 117)",1962,117
+R118,"Guarding of Machinery Recommendation, 1963 (No. 118)",1963,118
+R119,"Termination of Employment Recommendation, 1963 (No. 119)",1963,119
+R120,"Hygiene (Commerce and Offices) Recommendation, 1964 (No. 120)",1964,120
+R121,"Employment Injury Benefits Recommendation, 1964 (No. 121)",1964,121
+R122,"Employment Policy Recommendation, 1964 (No. 122)",1964,122
+R123,"Employment (Women with Family Responsibilities) Recommendation, 1965 (No. 123)",1965,123
+R124,"Minimum Age (Underground Work) Recommendation, 1965 (No. 124)",1965,124
+R125,"Conditions of Employment of Young Persons (Underground Work) Recommendation, 1965 (No. 125)",1965,125
+R126,"Vocational Training (Fishermen) Recommendation, 1966 (No. 126)",1966,126
+R127,"Co-operatives (Developing Countries) Recommendation, 1966 (No. 127)",1966,127
+R128,"Maximum Weight Recommendation, 1967 (No. 128)",1967,128
+R129,"Communications within the Undertaking Recommendation, 1967 (No. 129)",1967,129
+R130,"Examination of Grievances Recommendation, 1967 (No. 130)",1967,130
+R131,"Invalidity, Old-Age and Survivors' Benefits Recommendation, 1967 (No. 131)",1967,131
+R132,"Tenants and Share-croppers Recommendation, 1968 (No. 132)",1968,132
+R133,"Labour Inspection (Agriculture) Recommendation, 1969 (No. 133)",1969,133
+R134,"Medical Care and Sickness Benefits Recommendation, 1969 (No. 134)",1969,134
+R135,"Minimum Wage Fixing Recommendation, 1970 (No. 135)",1970,135
+R136,"Special Youth Schemes Recommendation, 1970 (No. 136)",1970,136
+R137,"Vocational Training (Seafarers) Recommendation, 1970 (No. 137)",1970,137
+R138,"Seafarers' Welfare Recommendation, 1970 (No. 138)",1970,138
+R139,"Employment of Seafarers (Technical Developments) Recommendation, 1970 (No. 139)",1970,139
+R140,"Crew Accommodation (Air Conditioning) Recommendation, 1970 (No. 140)",1970,140
+R141,"Crew Accommodation (Noise Control) Recommendation, 1970 (No. 141)",1970,141
+R142,"Prevention of Accidents (Seafarers) Recommendation, 1970 (No. 142)",1970,142
+R143,"Workers' Representatives Recommendation, 1971 (No. 143)",1971,143
+R144,"Benzene Recommendation, 1971 (No. 144)",1971,144
+R145,"Dock Work Recommendation, 1973 (No. 145)",1973,145
+R146,"Minimum Age Recommendation, 1973 (No. 146)",1973,146
+R147,"Occupational Cancer Recommendation, 1974 (No. 147)",1974,147
+R148,"Paid Educational Leave Recommendation, 1974 (No. 148)",1974,148
+R149,"Rural Workers' Organisations Recommendation, 1975 (No. 149)",1975,149
+R150,"Human Resources Development Recommendation, 1975 (No. 150)",1975,150
+R151,"Migrant Workers Recommendation, 1975 (No. 151)",1975,151
+R152,"Tripartite Consultation (Activities of the International Labour Organisation) Recommendation, 1976 (No. 152)",1976,152
+R153,"Protection of Young Seafarers Recommendation, 1976 (No. 153)",1976,153
+R154,"Continuity of Employment (Seafarers) Recommendation, 1976 (No. 154)",1976,154
+R155,"Merchant Shipping (Improvement of Standards) Recommendation, 1976 (No. 155)",1976,155
+R156,"Working Environment (Air Pollution, Noise and Vibration) Recommendation, 1977 (No. 156)",1977,156
+R157,"Nursing Personnel Recommendation, 1977 (No. 157)",1977,157
+R158,"Labour Administration Recommendation, 1978 (No. 158)",1978,158
+R159,"Labour Relations (Public Service) Recommendation, 1978 (No. 159)",1978,159
+R160,"Occupational Safety and Health (Dock Work) Recommendation, 1979 (No. 160)",1979,160
+R161,"Hours of Work and Rest Periods (Road Transport) Recommendation, 1979 (No. 161)",1979,161
+R162,"Older Workers Recommendation, 1980 (No. 162)",1980,162
+R163,"Collective Bargaining Recommendation, 1981 (No. 163)",1981,163
+R164,"Occupational Safety and Health Recommendation, 1981 (No. 164)",1981,164
+R165,"Workers with Family Responsibilities Recommendation, 1981 (No. 165)",1981,165
+R166,"Termination of Employment Recommendation, 1982 (No. 166)",1982,166
+R167,"Maintenance of Social Security Rights Recommendation, 1983 (No. 167)",1983,167
+R168,"Vocational Rehabilitation and Employment (Disabled Persons) Recommendation, 1983 (No. 168)",1983,168
+R169,"Employment Policy (Supplementary Provisions) Recommendation, 1984 (No. 169)",1984,169
+R170,"Labour Statistics Recommendation, 1985 (No. 170)",1985,170
+R171,"Occupational Health Services Recommendation, 1985 (No. 171)",1985,171
+R172,"Asbestos Recommendation, 1986 (No. 172)",1986,172
+R173,"Seafarers' Welfare Recommendation, 1987 (No. 173)",1987,173
+R174,"Repatriation of Seafarers Recommendation, 1987 (No. 174)",1987,174
+R175,"Safety and Health in Construction Recommendation, 1988 (No. 175)",1988,175
+R176,"Employment Promotion and Protection against Unemployment Recommendation, 1988 (No. 176)",1988,176
+R177,"Chemicals Recommendation, 1990 (No. 177)",1990,177
+R178,"Night Work Recommendation, 1990 (No. 178)",1990,178
+R179,"Working Conditions (Hotels and Restaurants) Recommendation, 1991 (No. 179)",1991,179
+R180,"Protection of Workers' Claims (Employer's Insolvency) Recommendation, 1992 (No. 180)",1992,180
+R181,"Prevention of Major Industrial Accidents Recommendation, 1993 (No. 181)",1993,181
+R182,"Part-Time Work Recommendation, 1994 (No. 182)",1994,182
+R183,"Safety and Health in Mines Recommendation, 1995 (No. 183)",1995,183
+R184,"Home Work Recommendation, 1996 (No. 184)",1996,184
+R185,"Labour Inspection (Seafarers) Recommendation, 1996 (No. 185)",1996,185
+R186,"Recruitment and Placement of Seafarers Recommendation, 1996 (No. 186)",1996,186
+R187,"Seafarers' Wages, Hours of Work and the Manning of Ships Recommendation, 1996 (No. 187)",1996,187
+R188,"Private Employment Agencies Recommendation, 1997 (No. 188)",1997,188
+R189,"Job Creation in Small and Medium-Sized Enterprises Recommendation, 1998 (No. 189)",1998,189
+R190,"Worst Forms of Child Labour Recommendation, 1999 (No. 190)",1999,190
+R191,"Maternity Protection Recommendation, 2000 (No. 191)",2000,191
+R192,"Safety and Health in Agriculture Recommendation, 2001 (No. 192)",2001,192
+R193,"Promotion of Cooperatives Recommendation, 2002 (No. 193)",2002,193
+R194,"List of Occupational Diseases Recommendation, 2002 (No. 194)",2002,194
+R195,"Human Resources Development Recommendation, 2004 (No. 195)",2004,195
+R196,"Work in Fishing Recommendation, 2005 (No. 196)",2005,196
+R197,"Promotional Framework for Occupational Safety and Health Recommendation, 2006 (No. 197)",2006,197
+R198,"Employment Relationship Recommendation, 2006 (No. 198)",2006,198
+R199,"Work in Fishing Recommendation, 2007 (No. 199)",2007,199
+R200,"HIV and AIDS Recommendation, 2010 (No. 200)",2010,200
+R201,"Domestic Workers Recommendation, 2011 (No. 201)",2011,201
+R202,"Social Protection Floors Recommendation, 2012 (No. 202)",2012,202
+R203,"Forced Labour (Supplementary Measures) Recommendation, 2014 (No. 203)",2014,203
+R204,"Transition from the Informal to the Formal Economy Recommendation, 2015 (No. 204)",2015,204
+R205,"Employment and Decent Work for Peace and Resilience Recommendation, 2017 (No. 205)",2017,205
+R206,"Violence and Harassment Recommendation, 2019 (No. 206)",2019,206
+R207,"Safe and Healthy Working Environment (Consequential Amendments) Recommendation, 2023 (No. 207)",2023,207
+R208,"Quality Apprenticeships Recommendation, 2023 (No. 208)",2023,208
+R209,"Biological Hazards in the Working Environment Recommendation, 2025 (No. 209)",2025,209

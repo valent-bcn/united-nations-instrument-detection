@@ -7,6 +7,11 @@ LLM the `query_context` plus the top 3 candidates from `top_k_matches`
 (shuffled, so position 1 is not always the best one) and stores the model's
 reasoning and its answer.
 
+Resuming: if --output already exists (e.g. after a crash), the script works out
+which of the selected rows are still missing from it (by `source_row`), judges
+only those, and writes the merged result back. Use --restart to ignore an
+existing output and start from scratch.
+
 Usage:
     python candidate_judge_csv.py --input entity_candidates_alias.csv --output alias_judged.csv
     python candidate_judge_csv.py --input entity_candidates_no_match.csv --output no_match_judged.csv
@@ -34,6 +39,7 @@ import pandas as pd
 THINK_END_TOKEN_ID = 151668  # </think> in the Qwen3 tokenizer
 N_SHOWN = 3
 REQUIRED_COLUMNS = {"query_context", "top_k_matches", "rerank_score"}
+RESUME_COLUMNS = {"source_row", "shown_candidates", "LLM_answer"}
 
 SYSTEM_PROMPT = """
 You are a title-matching classifier.
@@ -43,7 +49,7 @@ in the provided content.
 
 Return ONLY the number of the matching candidate:
 - 1, 2, 3, etc. if there is a match
-- 0 if none match
+- 0 if none match. If none title match the candidate, don't invent you're response. Then 0.
 - Do not provide explanations or any other text.
 """
 
@@ -51,13 +57,15 @@ Return ONLY the number of the matching candidate:
 def parse_args():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--input", required=True, help="Path to the candidates CSV")
-    p.add_argument("--output", required=True, help="Path of the CSV to write")
+    p.add_argument("--output", required=True, help="Path of the CSV to write (resumed if it already exists)")
     p.add_argument("--n", type=int, default=100, help="Rows to take from each end of rerank_score (default 100)")
     p.add_argument("--model", default="Qwen/Qwen3-14B", help="HF model name (default Qwen/Qwen3-14B)")
     p.add_argument("--seed", type=int, default=42, help="Seed for the candidate shuffle (default 42)")
-    p.add_argument("--max-new-tokens", type=int, default=32768, help="Generation limit (default 32768)")
+    p.add_argument("--max-new-tokens", type=int, default=3276, help="Generation limit (max default 32768, normal default 3276)")
     p.add_argument("--save-every", type=int, default=10, help="Write a partial output every K rows (default 10)")
-    
+    p.add_argument("--restart", action="store_true",
+                   help="Ignore an existing --output and judge every selected row again (overwrites it)")
+
     p.add_argument("--temperature", type=float, default=0,
                help="Sampling temperature; lower = more deterministic (default 0)")
     return p.parse_args()
@@ -162,9 +170,49 @@ def attach_results(selected, shown_all, thinking, answers, titles, years):
     return out
 
 
+def load_previous(path, selected):
+    """Rows already judged by an earlier (possibly crashed) run, or None if there is nothing to resume.
+
+    The file is read as plain strings with no NA parsing, so rows that are written back
+    unchanged keep exactly the same text (a title such as "NA" or "None" is not turned into NaN).
+    """
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        return None
+    try:
+        prev = pd.read_csv(path, dtype=str, keep_default_na=False)
+    except Exception as e:  # e.g. a file truncated mid-write
+        sys.exit(f"Could not read the existing output {path!r} ({e}). "
+                 f"Fix or move it, or pass --restart to overwrite it.")
+
+    missing = RESUME_COLUMNS - set(prev.columns)
+    if missing:
+        sys.exit(f"Existing output {path!r} lacks columns {sorted(missing)}, so it cannot be resumed. "
+                 f"Use another --output or pass --restart.")
+
+    prev["source_row"] = prev["source_row"].astype(int)
+    prev = prev.drop_duplicates(subset="source_row", keep="last").reset_index(drop=True)
+
+    unknown = set(prev["source_row"]) - set(selected["source_row"])
+    if unknown:
+        sys.exit(f"Existing output {path!r} has {len(unknown)} rows that are not in the current selection "
+                 f"(e.g. source_row={sorted(unknown)[:5]}). The input CSV or --n differs from the run that "
+                 f"produced it. Use another --output or pass --restart.")
+    return prev
+
+
+def combine(previous, new, order):
+    """Previous + newly judged rows, back in the original top-then-bottom selection order."""
+    out = new if previous is None else pd.concat([previous, new], ignore_index=True)
+    return out.sort_values("source_row", key=lambda s: s.map(order), kind="stable").reset_index(drop=True)
+
+
 def save(df, path):
-    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
-    df.to_csv(path, index=False)
+    """Write through a temp file so a crash mid-write cannot corrupt the output we resume from."""
+    path = os.path.abspath(path)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + ".tmp"
+    df.to_csv(tmp, index=False)
+    os.replace(tmp, path)
 
 
 def main():
@@ -180,16 +228,29 @@ def main():
     if len(selected) != 2 * args.n:
         print(f"WARNING: expected {2 * args.n} rows but got {len(selected)} (not enough scored rows in the input)")
 
+    # Resume: whatever is already in the output is kept, only the missing rows are judged.
+    previous = None if args.restart else load_previous(args.output, selected)
+    if previous is None:
+        pending = selected
+    else:
+        pending = selected[~selected["source_row"].isin(previous["source_row"])].reset_index(drop=True)
+        print(f"Resuming from {args.output}: {len(previous)} rows already judged, "
+              f"{len(pending)} left to do", flush=True)
+        if pending.empty:
+            print("Nothing left to judge.")
+            return
+
+    order = {sr: pos for pos, sr in enumerate(selected["source_row"])}
+
     tokenizer, model = load_model(args.model)
-    rng = random.Random(args.seed)
 
     shown_all, thinking_all, answers, titles, years = [], [], [], [], []
     invalid_rows = []
-    total = len(selected)
+    total = len(pending)
 
     for i, row in enumerate(
         tqdm(
-            selected.itertuples(index=False),
+            pending.itertuples(index=False),
             total=total,
             desc="Judging",
             unit="row",
@@ -200,7 +261,9 @@ def main():
             shown, thinking, answer = [], "", None
         else:
             shown = candidates[:]
-            rng.shuffle(shown)  # avoid always putting the best candidate first
+            # One RNG per row (seed + source_row): the shuffle of a row does not depend on which
+            # rows were judged before it, so a resumed run shuffles exactly like an uninterrupted one.
+            random.Random(f"{args.seed}-{row.source_row}").shuffle(shown)  # avoid always putting the best candidate first
             prompt = build_content_prompt(row.query_context, shown)
             thinking, content = judge(tokenizer, model, prompt, args.max_new_tokens, args.temperature)
             answer = parse_answer(content, len(shown))
@@ -216,11 +279,12 @@ def main():
 
 
         if i % args.save_every == 0 and i < total:
-            save(attach_results(selected, shown_all, thinking_all, answers, titles, years), args.output)
+            partial = attach_results(pending, shown_all, thinking_all, answers, titles, years)
+            save(combine(previous, partial, order), args.output)
 
-    result = attach_results(selected, shown_all, thinking_all, answers, titles, years)
+    result = combine(previous, attach_results(pending, shown_all, thinking_all, answers, titles, years), order)
     save(result, args.output)
-    print(f"Saved {len(result)} rows to {args.output}")
+    print(f"Saved {len(result)} rows to {args.output} ({total} judged in this run)")
 
     if invalid_rows:
         print(f"WARNING: {len(invalid_rows)} rows had no valid number in the LLM output (LLM_answer left empty):")

@@ -18,6 +18,17 @@ Pipeline
    context string with Qwen3-Reranker, and keep the top-k matches.
 6. Write a result CSV with the best match (and optionally the top-k) per
    entity.
+
+Assumptions you should double check
+------------------------------------
+* The catalogue document string is built as
+      f"{title} Year: {year}"
+  (interpreted from "as string + Year : {title}" in the request, which
+  looks like a typo for `{year}`; change `build_document_text` if you meant
+  something else).
+* Only entities whose `label` matches `--label-filter` (default
+  "INSTRUMENT") are resolved; everything else is skipped. Pass
+  `--label-filter ""` to disable filtering.
 """
 
 from __future__ import annotations
@@ -80,12 +91,22 @@ def build_instrument_catalogue(args: argparse.Namespace) -> pd.DataFrame:
     return df_instrument
 
 
+def year_to_int(value):
+    """Convert a year (np.int64, float like 1968.0, str, NaN, ...) to a plain
+    Python int, or None if it is missing / not parseable."""
+    if value is None or pd.isna(value):
+        return None
+    try:
+        return int(float(value))
+    except (TypeError, ValueError):
+        return None
+
+
 def build_document_text(row: pd.Series) -> str:
     """Text representation of a candidate instrument fed to the reranker."""
     title = str(row["title"]).strip()
-    year = row.get("year", "")
-    year = "" if pd.isna(year) else str(int(year)) if str(year) != "" else ""
-    return f"{title} Year: {year}" if year else title
+    year = year_to_int(row.get("year"))
+    return f"{title} Year: {year}" if year is not None else title
 
 
 # --------------------------------------------------------------------------
@@ -111,10 +132,18 @@ def load_resolutions(args: argparse.Namespace) -> pd.DataFrame:
 # --------------------------------------------------------------------------
 def load_entities(args: argparse.Namespace) -> pd.DataFrame:
     df_ent = pd.read_csv(args.entities)
-    required = {"doc_id", "text", "score", "start", "end", "label"}
+
+    # Accept `res_id2` as an alias for `doc_id`; an existing `doc_id` always wins
+    if "doc_id" not in df_ent.columns and "res_id2" in df_ent.columns:
+        df_ent = df_ent.rename(columns={"res_id2": "doc_id"})
+
+    required = {"doc_id", "text", "start", "end"}
     missing = required - set(df_ent.columns)
     if missing:
-        raise ValueError(f"Entities CSV is missing columns: {missing}")
+        hint = " (or 'res_id2')" if "doc_id" in missing else ""
+        raise ValueError(
+            f"Entities CSV is missing columns: {sorted(missing)}{hint}"
+        )
 
     df_ent["doc_id"] = df_ent["doc_id"].astype(str).str.strip()
     df_ent["start"] = df_ent["start"].astype(int)
@@ -173,15 +202,7 @@ def resolve_entities(
     results = []
     missing_ids = set()
 
-    # tqdm tracks elapsed time, iteration rate, and ETA without us having to
-    # calculate time.time() on every iteration or print the model answer/query.
-    for _, ent in tqdm(
-        df_ent.iterrows(),
-        total=len(df_ent),
-        desc="Resolving entities",
-        unit="entity",
-        mininterval=1.0,
-    ):
+    for _, ent in tqdm(df_ent.iterrows(), total=len(df_ent), desc="Resolving entities"):
         res_id = ent["doc_id"]
         if res_id not in res_lookup.index:
             missing_ids.add(res_id)
@@ -217,9 +238,9 @@ def resolve_entities(
 
         top_k_matches = [
             {
-                "title": df_instrument.iloc[r["corpus_id"]]["title"],
-                "year": df_instrument.iloc[r["corpus_id"]]["year"],
-                "score": float(r["score"]),
+                "title": str(df_instrument.iloc[r["corpus_id"]]["title"]),
+                "year": year_to_int(df_instrument.iloc[r["corpus_id"]]["year"]),
+                "score": round(float(r["score"]), 4),
             }
             for r in rankings
         ]
@@ -229,14 +250,14 @@ def resolve_entities(
                 **ent.to_dict(),
                 "query_context": query,
                 "matched_title": best_row["title"],
-                "matched_year": best_row["year"],
+                "matched_year": year_to_int(best_row["year"]),
                 "rerank_score": float(top["score"]),
                 "top_k_matches": top_k_matches,
             }
         )
 
     if missing_ids:
-        tqdm.write(
+        print(
             f"WARNING: {len(missing_ids)} distinct resolution id(s) from the entities CSV "
             f"were not found in df_res and were left unresolved, e.g. "
             f"{list(missing_ids)[:5]}"
@@ -309,13 +330,13 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--top-k",
         type=int,
-        default=3,
+        default=5,
         help="Number of candidate instruments to keep per entity",
     )
     p.add_argument(
         "--batch-size",
         type=int,
-        default=8,
+        default=16,
     )
 
     p.add_argument(
